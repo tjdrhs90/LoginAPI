@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LoginAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2La-8C-5B1">
+                                <rect key="frame" x="0.0" y="58.999999999999993" width="393" height="98.333333333333314"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhU-SM-Nv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="uhU-SM-Nv3" secondAttribute="height" id="ims-CU-lqX"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="kakao login"/>
+                                        <connections>
+                                            <action selector="kakaoBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSp-yH-zrw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwR-6g-kp5">
+                                        <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="AwR-6g-kp5" secondAttribute="height" id="B6I-P7-tOG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="naver login"/>
+                                        <connections>
+                                            <action selector="naverBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Lu-Sy-1Ux"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgd-sr-uin">
+                                        <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="lgd-sr-uin" secondAttribute="height" id="vfw-pL-EuY"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="google login"/>
+                                        <connections>
+                                            <action selector="googleBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ez-gC-oEy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOO-SX-gKk">
+                                        <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="WOO-SX-gKk" secondAttribute="height" id="gsn-dV-l7v"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="apple login"/>
+                                        <connections>
+                                            <action selector="appleBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GU7-Pt-DA1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Odt-1K-I4K">
+                                <rect key="frame" x="0.0" y="207.33333333333334" width="393" height="98.333333333333343"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sa6-1b-wdU">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Sa6-1b-wdU" secondAttribute="height" id="Kiu-pG-9S5"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="kakao logout"/>
+                                        <connections>
+                                            <action selector="kakaoLogoutBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u25-X5-Ytr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DN3-rS-TuN">
+                                        <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="DN3-rS-TuN" secondAttribute="height" id="wXY-Yh-84o"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="naver logout"/>
+                                        <connections>
+                                            <action selector="naverLogoutBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ign-zH-cTF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUm-ul-I0k">
+                                        <rect key="frame" x="196.66666666666666" y="0.0" width="97.999999999999972" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZUm-ul-I0k" secondAttribute="height" id="Jki-KY-uSW"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="google logout"/>
+                                        <connections>
+                                            <action selector="googleLogoutBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zuU-xo-eo5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHb-LL-BRU">
+                                        <rect key="frame" x="294.66666666666669" y="0.0" width="98.333333333333314" height="98.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="jHb-LL-BRU" secondAttribute="height" id="caj-4x-8JU"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="apple logout"/>
+                                        <connections>
+                                            <action selector="appleLogoutBtnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wtT-mu-Cdb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2La-8C-5B1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AFT-gm-qYb"/>
+                            <constraint firstItem="2La-8C-5B1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PLj-Jb-OeY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Odt-1K-I4K" secondAttribute="trailing" id="fUR-OT-9vO"/>
+                            <constraint firstItem="Odt-1K-I4K" firstAttribute="top" secondItem="2La-8C-5B1" secondAttribute="bottom" constant="50" id="fYZ-vV-6Or"/>
+                            <constraint firstItem="Odt-1K-I4K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gcK-1w-qpW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2La-8C-5B1" secondAttribute="trailing" id="w2c-yI-kdx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
